@@ -1,5 +1,5 @@
 .personal-data{
-  background-color: red;
+  background-color: blue;
   width:400px;
   height:150px;
 }
@@ -38,3 +38,36 @@
   margin-top:10px;
   margin-bottom:10px;
 }
+
+/* -------- .texto -------- */
+.texto {
+  width: 500px;
+  min-height: 500px; /*Min height te permite definir una altura minima que puede crecer si crece el contenido*/
+  background-color: yellow;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  padding: 5px 10px 10px 15px;
+}
+
+.texto h1 {
+  font-size: 32px;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: 3px 2px red;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.texto h2 {
+  width: 400px;
+  font-size: 18px;
+  //background-color: blue; /*Usando // podemos comentar alguna linea de css para que no se aplique*/
+  border-bottom: 1px solid black;
+}
+
+.texto .important {
+  color: red;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: underline;
+}
+/* -------- FIN .texto -------- */
