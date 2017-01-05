@@ -1,3 +1,74 @@
+html, body, h1, h2, h3,
+p, ol, ul, li, a {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: #4eb7d9;
+  width: 1000px;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.portada {
+  width: 1000px;
+  height: 319px;
+  background: #7a3a0d;
+  background-image: url(../images/panorama.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.menu {
+  width: 300px;
+  height: 50px;
+  //background-color: yellow;
+  position: relative;
+  float: right;
+}
+.menu ul{
+  list-style-type: none;
+
+}
+
+.menu li {
+  display: inline;
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  width: 99px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;;
+  padding-top: 10px;
+  //background-color: #295ea4;
+  background: linear-gradient(#AFE0FF, #295ea4);
+  color: white;
+  border-right: 1px dotted #AFE0FF;
+  border-bottom: 1px solid #AFE0FF;
+}
+
+//Revisar por que no funciona...
+.menu li:last-child {
+    border-right: none;
+}
+
+.menu li a:hover{
+  background: linear-gradient(#295ea4, #AFE0FF);
+  border-right: 1px dotted #295ea4;
+  border-bottom: 1px solid #295ea4;
+}
+
+.menu .first-button {
+  border-bottom-left-radius: 5px;
+}
+
+
+/* -------- .personal-data -------- */
 .personal-data{
   background-color: blue;
   width:400px;
