@@ -11,6 +11,13 @@ body {
   font-family: Tahoma, Geneva, sans-serif;
 }
 
+footer{
+  width: 1000px;
+  height: 250px;
+  background: black url(../images/footer-bg.png) top left repeat;
+}
+
+/* -------- .portada -------- */
 .portada {
   width: 1000px;
   height: 319px;
@@ -20,6 +27,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/* -------- .menu -------- */
 .menu {
   width: 300px;
   height: 50px;
@@ -29,7 +37,7 @@ body {
 }
 .menu ul{
   list-style-type: none;
-
+  overflow: hidden;
 }
 
 .menu li {
@@ -37,15 +45,15 @@ body {
   float: left;
 }
 
-.menu li a {
+.menu li a, .drop-button {
   display: block;
-  width: 99px;
+  width: 98px;
   height: 40px;
   text-align: center;
   text-decoration: none;
-  text-transform: capitalize;;
+  text-transform: capitalize;
+  font-size: 16px;
   padding-top: 10px;
-  //background-color: #295ea4;
   background: linear-gradient(#AFE0FF, #295ea4);
   color: white;
   border-right: 1px dotted #AFE0FF;
@@ -57,16 +65,41 @@ body {
     border-right: none;
 }
 
-.menu li a:hover{
+.menu li a:hover, .dropdown:hover, .drop-button{
   background: linear-gradient(#295ea4, #AFE0FF);
   border-right: 1px dotted #295ea4;
   border-bottom: 1px solid #295ea4;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .menu .first-button {
   border-bottom-left-radius: 5px;
 }
 
+/*@media screen and (max-width: 600px){
+    .menu li {float: none;}
+}*/
+
+/* -------- .search-form -------- */
+.search-form{
+  width: 300px;
+  min-height: 400px;
+  background: grey url(../images/form-bg.png) top left repeat;
+}
 
 /* -------- .personal-data -------- */
 .personal-data{

@@ -11,10 +11,30 @@
     <nav class="menu">
       <ul>
         <li><a class="first-button" href="*">home</a></li>
-        <li><a href="*">viajes</a></li>
-        <li><a href="*">contato</a></li>
+        <li class="dropdown"><a class="drop-button" href="*">viajes</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+        <li><a href="*">contacto</a></li>
       </ul>
     </nav>
   </header>
+  <div class="search-form">
+    <label for="origen">desde:</label>
+    <input type="text" id="origen" name="origen"></input>
+    <label for="destino">hacia:</label>
+    <input type="text" nam="destino" name="destino"></input>
+    <label for="">fecha de salida:</label>
+    <input type="date" id="salida" name="salida"></input>
+    <label for="regreso">fecha de regreso:</label>
+    <input type="date" id="regreso" name="regreso"></input>
+    <input type="submit" id="search-submit" name="Buscar"></input>
+  </div>
+  <main>
+  </main>
+  <footer></footer>
 </body>
 </html>
