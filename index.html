@@ -23,15 +23,20 @@
     </nav>
   </header>
   <div class="search-form">
-    <label for="origen">desde:</label>
-    <input type="text" id="origen" name="origen"></input>
-    <label for="destino">hacia:</label>
-    <input type="text" nam="destino" name="destino"></input>
-    <label for="">fecha de salida:</label>
-    <input type="date" id="salida" name="salida"></input>
-    <label for="regreso">fecha de regreso:</label>
-    <input type="date" id="regreso" name="regreso"></input>
-    <input type="submit" id="search-submit" name="Buscar"></input>
+    <form>
+      <label for="origen">origen</label>
+      <input type="text" id="origen" placeholder="ingresa desde donde viajas" autofocus required>
+      <label for="destino">destino </label>
+      <input type="text" id="destino"placeholder="ingresa hacia adonde viajas" required>
+      <label for="partida">en que fecha? </label>
+      <input type="date" id="partida" placeholder="partida" required>
+      <input type="date" id="regreso" placeholder="regreso" required>
+      <label for="hotel">hotel incluido</label>
+      <input type="checkbox" id="hotel">
+      <label for="excursiones">excursiones</label>
+      <input type="checkbox" id="excursiones">
+      <input type="submit" id="search-submit" value="Buscar">
+    </form>
   </div>
   <main>
   </main>

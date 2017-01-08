@@ -9,7 +9,26 @@ body {
   background-color: #4eb7d9;
   width: 1000px;
   font-family: Tahoma, Geneva, sans-serif;
+  font-size: 16px;
 }
+
+label, input {
+  display:block;
+  margin-left: 10px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  margin-bottom: 25px;
+  width: 250px;
+}
+
+input[type=checkbox], label[for=hotel], label[for=excursiones] {
+  display: inline;
+} //ver despues//
 
 footer{
   width: 1000px;
@@ -79,7 +98,7 @@ li.dropdown {
     display: none;
     position: absolute;
     min-width: 100px;
-    box-shadow: 0px 8px 16px 0px black;
+    box-shadow: 0px 8px 16px 0px black; //buscar* ver documentacion//
 }
 
 .dropdown:hover .dropdown-content {
@@ -98,8 +117,23 @@ li.dropdown {
 .search-form{
   width: 300px;
   min-height: 400px;
-  background: grey url(../images/form-bg.png) top left repeat;
+  background: #295ea4 url(../images/form-bg.png) top left repeat;
 }
+
+.search-form input {
+  border: 2px solid #AFE0FF;
+}
+
+.search-form input[type=submit] {
+  width: 100px;
+  border: none;
+}
+
+.search-form input[type=text] {
+  font-size: 18px;
+}
+
+
 
 /* -------- .personal-data -------- */
 .personal-data{
