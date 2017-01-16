@@ -4,7 +4,7 @@ $(document).ready(function () {
 
   $('.pjs').text("el nombre del flaco es: " + nameVar);
 
-  var html = "<p>El nombre del flaco este es " + nameVar + "</p>";
+  var html = "<ul><li>El nombre del pibe este es " + nameVar + "</li></ul>";
   $('.parrafojs').html(html);
   console.log(nameVar);
 });

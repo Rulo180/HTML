@@ -6,8 +6,7 @@ p, ol, ul, li, a {
 }
 
 body {
-  background-color: #4eb7d9;
-  width: 1000px;
+  background-color: #999;
   font-family: Tahoma, Geneva, sans-serif;
   font-size: 16px;
 }
@@ -25,33 +24,45 @@ input {
   margin-bottom: 25px;
   width: 250px;
 }
+ li {
+   list-style: none;
+ }
 
-input[type=checkbox], label[for=hotel], label[for=excursiones] {
-  display: inline;
-} //ver despues//
-
-footer{
-  width: 1000px;
-  height: 250px;
-  background: black url(../images/footer-bg.png) top left repeat;
+#container {
+    width: 960px;
+    min-height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4eb7d9;
+    border: 0px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 8px 20px 2px black;
 }
 
 /* -------- .portada -------- */
-.portada {
-  width: 1000px;
+header {
+  width: 960px;
   height: 319px;
   background: #7a3a0d;
   background-image: url(../images/panorama.jpg);
   background-position: top left;
   background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+main {
+  width: 640px;
+  min-height: 500px;
+  display: inline-block;
+  background-color: yellow;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 /* -------- .menu -------- */
 .menu {
   width: 300px;
   height: 50px;
-  //background-color: yellow;
-  position: relative;
   float: right;
 }
 .menu ul{
@@ -61,13 +72,13 @@ footer{
 
 .menu li {
   display: inline;
+  position: relative;
   float: left;
 }
 
 .menu li a, .drop-button {
   display: block;
-  width: 98px;
-  height: 40px;
+  width: 98px;height: 40px;
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
@@ -75,13 +86,13 @@ footer{
   padding-top: 10px;
   background: linear-gradient(#AFE0FF, #295ea4);
   color: white;
-  border-right: 1px dotted #AFE0FF;
+  border-left: 1px dotted #AFE0FF;
   border-bottom: 1px solid #AFE0FF;
 }
 
-//Revisar por que no funciona...
-.menu li:last-child {
-    border-right: none;
+.menu ul:first-child {
+  border-left: 0px;
+  border-bottom-left-radius: 15px;
 }
 
 .menu li a:hover, .dropdown:hover, .drop-button{
@@ -96,7 +107,6 @@ li.dropdown {
 
 .dropdown-content {
     display: none;
-    position: absolute;
     min-width: 100px;
     box-shadow: 0px 8px 16px 0px black; //buscar* ver documentacion//
 }
@@ -104,9 +114,9 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-.menu .first-button {
-  border-bottom-left-radius: 5px;
+.dropdown:hover .dropdown-content a {
+    border-left: 0px;
+    border-bottom: 1px dotted #AFE0FF;
 }
 
 /*@media screen and (max-width: 600px){
@@ -118,6 +128,11 @@ li.dropdown {
   width: 300px;
   min-height: 400px;
   background: #295ea4 url(../images/form-bg.png) top left repeat;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: relative;
+  float:left;
+  margin-right: 20px;
 }
 
 .search-form input {
@@ -133,7 +148,45 @@ li.dropdown {
   font-size: 18px;
 }
 
+.search-form input[type=date]{
+  width: 120px;
+}
 
+//  No esta funcionando
+.search-form input[type="checkbox"], .search-form label[for=excursiones], .search-form label[for=hotel]{
+  display: inline;
+}
+/* -------- .PRIMARY -------- */
+.primary {
+  margin-bottom: 20px;
+}
+
+/* -------- .SECONDARY -------- */
+.secondary {
+  width: 960px;
+  height: 300px;
+  background-color: orange;
+  margin-bottom: 20px;
+}
+
+.secondary article {
+  width: 300px;
+  height: 280px;
+  background: white;
+  display: inline-block;
+  margin: 10px 0px 10px 10px;
+}
+
+.secondary article:last-child {
+  margin-right: 10px;
+}
+
+/* -------- FOOTER -------- */
+footer{
+  width: 960px;
+  height: 200px;
+  background: black url(../images/footer-bg.png) top left repeat;
+}
 
 /* -------- .personal-data -------- */
 .personal-data{
