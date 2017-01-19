@@ -6,7 +6,7 @@ p, ol, ul, li, a {
 }
 
 body {
-  background-color: #999;
+  background-color: #295ea4;
   font-family: Tahoma, Geneva, sans-serif;
   font-size: 16px;
 }
@@ -27,6 +27,12 @@ input {
  li {
    list-style: none;
  }
+
+ @media screen and (max-width: 1100px) {
+    body {
+        background-color: lightgreen;
+    }
+}
 
 #container {
     width: 960px;
@@ -54,7 +60,7 @@ main {
   width: 640px;
   min-height: 500px;
   display: inline-block;
-  background-color: yellow;
+  background-color: #AFE0FF;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
@@ -133,29 +139,37 @@ li.dropdown {
   position: relative;
   float:left;
   margin-right: 20px;
-}
-
-.search-form input {
-  border: 2px solid #AFE0FF;
+  padding: 10px;
 }
 
 .search-form input[type=submit] {
   width: 100px;
   border: none;
+  display: block;
+  margin: 20px auto 10px auto;
 }
 
 .search-form input[type=text] {
   font-size: 18px;
+  border: 2px solid #AFE0FF;
 }
 
 .search-form input[type=date]{
   width: 120px;
+  border: 2px solid #AFE0FF;
+}
+
+.search-form label[for=excursiones], .search-form label[for=hotel] {
+ display: inline;
+ text-transform: capitalize;
 }
 
 //  No esta funcionando
-.search-form input[type="checkbox"], .search-form label[for=excursiones], .search-form label[for=hotel]{
+.search-form input[type=checkbox] {
   display: inline;
+  border: 5px solid red;
 }
+
 /* -------- .PRIMARY -------- */
 .primary {
   margin-bottom: 20px;

@@ -1,0 +1,28 @@
+{
+  "name": "HTML",
+  "homepage": "https://github.com/Rulo180/HTML",
+  "authors": [
+    "Rulo180 <rullencio180@gmail.com>"
+  ],
+  "description": "practica de HTML, CSS y JS",
+  "main": "index.html",
+  "keywords": [
+    "html5",
+    "css3",
+    "js",
+    "jquery",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}

@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Index | Practica HTML-CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap-theme.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
   <script src="scripts/jquery-3.1.1.min.js"></script>
   <script src="scripts/functions.js"></script>
@@ -15,7 +17,7 @@
       <nav class="menu">
         <ul>
           <li><a class="first-button" href="*">inicio</a></li>
-          <li class="dropdown"><a class="drop-button" href="*">viajes</a>
+          <li class="dropdown"><a class="drop-button" href="*">viajes<span class="caret"></span></a>
             <div class="dropdown-content">
               <a href="#">Link 1</a>
               <a href="#">Link 2</a>
@@ -40,7 +42,7 @@
           <input type="checkbox" id="hotel">
           <label for="excursiones">excursiones</label>
           <input type="checkbox" id="excursiones">
-          <input type="submit" id="search-submit" value="Buscar">
+          <input type="submit" id="search-submit" value="Buscar" class="btn btn-lg btn-primary">
         </form>
       </aside>
       <main>
