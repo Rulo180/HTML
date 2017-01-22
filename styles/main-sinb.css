@@ -1,0 +1,277 @@
+html, body, h1, h2, h3,
+p, ol, ul, li, a {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: #295ea4;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 16px;
+}
+
+label, input {
+  display:block;
+  margin-left: 10px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  margin-bottom: 25px;
+  width: 250px;
+}
+ li {
+   list-style: none;
+ }
+
+ @media screen and (max-width: 1100px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+#container {
+    width: 960px;
+    min-height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4eb7d9;
+    border: 0px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 8px 20px 2px black;
+}
+
+/* -------- .portada -------- */
+header {
+  width: 960px;
+  height: 319px;
+  background: #7a3a0d;
+  background-image: url(../images/panorama.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+main {
+  width: 640px;
+  min-height: 700px;
+  display: inline-block;
+  background-color: #AFE0FF;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* -------- .menu -------- */
+.menu {
+  width: 300px;
+  height: 50px;
+  float: right;
+}
+.menu ul{
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.menu li {
+  display: inline;
+  position: relative;
+  float: left;
+}
+
+.menu li a, .drop-button {
+  display: block;
+  width: 98px;height: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  padding-top: 10px;
+  background: linear-gradient(#AFE0FF, #295ea4);
+  color: white;
+  border-left: 1px dotted #AFE0FF;
+  border-bottom: 1px solid #AFE0FF;
+}
+
+.menu ul:first-child {
+  border-left: 0px;
+  border-bottom-left-radius: 15px;
+}
+
+.menu li a:hover, .dropdown:hover, .drop-button{
+  background: linear-gradient(#295ea4, #AFE0FF);
+  border-right: 1px dotted #295ea4;
+  border-bottom: 1px solid #295ea4;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px black; //buscar* ver documentacion//
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropdown-content a {
+    border-left: 0px;
+    border-bottom: 1px dotted #AFE0FF;
+}
+
+/*@media screen and (max-width: 600px){
+    .menu li {float: none;}
+}*/
+
+/* -------- .search-form -------- */
+.search-form{
+  background: #295ea4 url(../images/form-bg.png) top left repeat;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: relative;
+  float:left;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.search-form input[type=submit] {
+  width: 100px;
+  border: none;
+  display: block;
+  margin: 20px auto 10px auto;
+}
+
+.search-form input[type=text] {
+  font-size: 18px;
+  border: 2px solid #AFE0FF;
+}
+
+.search-form input[type=date]{
+  width: 120px;
+  border: 2px solid #AFE0FF;
+}
+
+.search-form label{
+ text-transform: capitalize;
+}
+
+//  No esta funcionando
+.search-form input[type=checkbox] {
+  display: inline;
+  border: 5px solid red;
+}
+
+/* -------- .PRIMARY -------- */
+.primary {
+  margin-bottom: 20px;
+}
+
+/* -------- .SECONDARY -------- */
+.secondary {
+  width: 960px;
+  height: 300px;
+  background-color: orange;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.secondary article {
+  width: 300px;
+  height: 280px;
+  background: white;
+  display: inline-block;
+  margin: 10px 0px 10px 10px;
+}
+
+.secondary article:last-child {
+  margin-right: 10px;
+}
+
+/* -------- FOOTER -------- */
+footer{
+  width: 960px;
+  height: 200px;
+  background: black url(../images/footer-bg.png) top left repeat;
+}
+
+/* -------- .personal-data -------- */
+.personal-data{
+  background-color: blue;
+  width:400px;
+  height:150px;
+}
+
+.personal-data h1{
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  background-color: green;
+  width:200px;
+  margin-left:0px;
+  margin-right:10px;
+  margin-bottom:10px;
+  padding-left:10px;
+  position:relative;
+  float:left;
+}
+
+.personal-data p{
+  font-family:Georgia, serif;
+  font-size: smaller;
+  margin: 5px 10px 10px 10px;
+}
+
+.perfil-photo{
+  background-color: yellow;
+  margin-left:0px;
+  margin-top:0px;
+  width:120px;
+  height: 120px;
+  position:relative;
+  float:left;
+}
+.perfil-photo img{
+  width:100px;
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* -------- .texto -------- */
+.texto {
+  width: 500px;
+  min-height: 500px; /*Min height te permite definir una altura minima que puede crecer si crece el contenido*/
+  background-color: yellow;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  padding: 5px 10px 10px 15px;
+}
+
+.texto h1 {
+  font-size: 32px;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: 3px 2px red;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.texto h2 {
+  width: 400px;
+  font-size: 18px;
+  //background-color: blue; /*Usando // podemos comentar alguna linea de css para que no se aplique*/
+  border-bottom: 1px solid black;
+}
+
+.texto .important {
+  color: red;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: underline;
+}
+/* -------- FIN .texto -------- */

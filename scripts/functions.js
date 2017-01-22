@@ -6,5 +6,17 @@ $(document).ready(function () {
 
   var html = "<ul><li>El nombre del pibe este es " + nameVar + "</li></ul>";
   $('.parrafojs').html(html);
-  console.log(nameVar);
+
+//Activa o desactiva la clase "collapse" del navbar cuando se hace click en el boton
+  $(".navbar-toggle").click(function() {
+    //alert("showNav");
+    $('.navbar-nav').toggleClass( "collapse" );
+  });
+
+$('.dropdown-toggle').click(function (){
+  //alert("dropdown");
+  $('.dropdown').toggleClass('open');
+});
+
+
 });

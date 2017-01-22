@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Index | Practica HTML-CSS</title>
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="styles/main-sinb.css">
+</head>
+<body>
+  <section id="container">
+    <header>
+      <nav class="menu">
+        <ul>
+          <li><a class="first-button" href="*">inicio</a></li>
+          <li class="dropdown"><a class="drop-button" href="*">viajes<span class="caret"></span></a>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          <li><a href="*">contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="primary">
+      <aside class="search-form">
+        <form>
+          <label for="origen">origen</label>
+          <input type="text" id="origen" placeholder="ingresa desde donde viajas" autofocus required>
+          <label for="destino">destino </label>
+          <input type="text" id="destino"placeholder="ingresa hacia adonde viajas" required>
+          <label for="partida">en que fecha? </label>
+          <input type="date" id="partida" placeholder="partida" required>
+          <input type="date" id="regreso" placeholder="regreso" required>
+          <label>
+            pasajeros:
+            <select class="form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="hotelCheckB" value="hotel">
+            hotel:
+          </label>
+          <br>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="excursionesCheckB" value="excursion">
+            excursion:
+          </label>
+          <input type="submit" id="search-submit" value="Buscar" class="btn btn-lg btn-primary">
+        </form>
+      </aside>
+      <main>
+        <div class="parrafojs">
+          <p class="pjs"></p>
+        </div>
+        <ul>
+          <li><a href="views/noticia.html">noticia.html </a></li>
+          <li><a href="views/texto.html"> texto.html</a></li>
+          <li><a href="views/prueba.php">prueba.php </a></li>
+          <li><a href="views/blasting.html">Blasting Off with Bootstrap</a></li>
+        </ul>
+      </main>
+    </div>
+    <section class="secondary">
+      <article></article><article></article><article></article>
+    </section>
+    <footer></footer>
+  </section>
+</body>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="scripts/functions.js"></script>
+
+</html>

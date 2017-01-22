@@ -5,61 +5,176 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Index | Practica HTML-CSS</title>
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="styles/bootstrap-theme.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
-  <script src="scripts/jquery-3.1.1.min.js"></script>
-  <script src="scripts/functions.js"></script>
 </head>
 <body>
-  <section id="container">
-    <header>
-      <nav class="menu">
-        <ul>
-          <li><a class="first-button" href="*">inicio</a></li>
-          <li class="dropdown"><a class="drop-button" href="*">viajes<span class="caret"></span></a>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
+    <header class='nav-bar navbar-default navbar-static-top '>
+      <div class="container">
+        <div class='navbar-header'>
+          <a href='/' class='navbar-brand'>
+            Desplegar.com
+          </a>
+          <button type='button' class="navbar-toggle">
+            <span class='sr-only glyphicon glyphicon-menu-hamburger'>Toggle navigation</span>
+            <span class='glyphicon glyphicon-menu-hamburger'></span>
+          </button>
+        </div>
+        <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+          <li><a href="*">inicio</a></li>
+          <li class="dropdown">
+            <a href="#" class='dropdown-toggle' role="button">
+              viajes<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+            </ul>
           </li>
           <li><a href="*">contacto</a></li>
         </ul>
-      </nav>
+      </div>
     </header>
-    <div class="primary">
-      <aside class="search-form">
-        <form>
-          <label for="origen">origen</label>
-          <input type="text" id="origen" placeholder="ingresa desde donde viajas" autofocus required>
-          <label for="destino">destino </label>
-          <input type="text" id="destino"placeholder="ingresa hacia adonde viajas" required>
-          <label for="partida">en que fecha? </label>
-          <input type="date" id="partida" placeholder="partida" required>
-          <input type="date" id="regreso" placeholder="regreso" required>
-          <label for="hotel">hotel incluido</label>
-          <input type="checkbox" id="hotel">
-          <label for="excursiones">excursiones</label>
-          <input type="checkbox" id="excursiones">
-          <input type="submit" id="search-submit" value="Buscar" class="btn btn-lg btn-primary">
-        </form>
-      </aside>
-      <main>
-        <div class="parrafojs">
-          <p class="pjs"></p>
-        </div>
-        <ul>
-          <li><a href="views/noticia.html">noticia.html </a></li>
-          <li><a href="views/texto.html"> texto.html</a></li>
-          <li><a href="views/prueba.php">prueba.php </a></li>
-        </ul>
-      </main>
+
+    <div class='container'>
+      <div class='row'>
+        <aside class="col-sm-4 search-form center-block">
+          <form class="form-horizontal">
+            <div class='row'>
+              <div class="form-group form-group-lg col-xs-10">
+                <label for="origen">origen</label>
+                <input type="text" class="form-control" id="origen" placeholder="ingresa desde donde viajas" autofocus required>
+              </div>
+            </div>
+            <div class='row'>
+              <div class="form-group form-group-lg col-xs-10">
+                <label for="destino">destino </label>
+                <input type="text" class="form-control" id="destino"placeholder="ingresa hacia adonde viajas" required>
+              </div>
+            </div>
+            <div class='row'>
+              <div class="form-group col-xs-6">
+                <label for="partida">en que fecha? </label>
+                <input type="date" class="form-control" id="partida" placeholder="partida" required>
+                <input type="date" class="form-control" id="regreso" placeholder="regreso" required>
+              </div>
+            </div>
+            <div class='row'>
+              <div class="form-group col-xs-4">
+                <label>
+                  pasajeros:
+                  <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class='row col-xs-4'>
+              <div class="form-group">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="hotelCheckB" value="hotel">
+                  hotel
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="excursionesCheckB" value="excursion">
+                  excursion
+                </label>
+              </div>
+            </div>
+            <div class='row'>
+              <div class="form-group col-xs-12">
+                <input type="submit" id="search-submit" value="Buscar" class="btn btn-primary btn-lg center-block">
+              </div>
+            </div>
+          </form>
+        </aside>
+        <main class="col-sm-8">
+          <div class="parrafojs">
+            <p class="pjs"></p>
+          </div>
+          <ul>
+            <li><a href="views/noticia.html">noticia.html </a></li>
+            <li><a href="views/texto.html"> texto.html</a></li>
+            <li><a href="views/prueba.php">prueba.php </a></li>
+            <li><a href="views/blasting.html">Blasting Off with Bootstrap</a></li>
+          </ul>
+        </main>
+      </div>
     </div>
-    <section class="secondary">
-      <article></article><article></article><article></article>
-    </section>
-    <footer></footer>
-  </section>
+
+    <div class='container-fluid'>
+      <div class='row'>
+      <section class="col-md-10 col-md-offset-1 articles">
+        <article class='col-sm-4'>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class='panel-title'>paris</h3>
+            </div>
+            <div class="panel-body col-md-10 col-md-offset-1">
+              <img src='images/paris.jpg' alt='paris' class="img-responsive img-rounded center-block">
+              <div class="caption well">
+                <h4 class="text-center">semana romantica</h4>
+                <ul class='travel-details'>
+                  <li>5 noches</li>
+                  <li>Visitas guiadas</li>
+                  <li>Cena romantica en la torre Eiffel.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class='col-sm-4'>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class='panel-title'>heerlen</h3>
+            </div>
+            <div class="panel-body col-md-10 col-md-offset-1">
+              <img src='images/heerlen.jpg' alt='heerlen' class="img-responsive img-rounded center-block">
+              <div class="caption well">
+                <h4 class="text-center">conoce el IBE</h4>
+                <ul class='travel-details'>
+                  <li>3 noches.</li>
+                  <li>Pase para toda la temporada.</li>
+                  <li>Entrenamiento privado con Juan Ten.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class='col-sm-4'>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class='panel-title'>cancun</h3>
+            </div>
+            <div class="panel-body col-md-10 col-md-offset-1">
+              <img src='images/cancun.jpg' alt='cancun' class="img-responsive img-rounded center-block">
+              <div class="caption well">
+                <h4 class="text-center">olvidate de todo</h4>
+                <ul class='travel-details'>
+                  <li>10 noches.</li>
+                  <li>Tragos en cocos!</li>
+                  <li>Flacos trabados y minas operadas.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      </div>
+      <div class='row'>
+      <footer class='col-xs-12'>Footer</footer>
+      </div>
+  </div>
 </body>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="scripts/functions.js"></script>
+
 </html>
