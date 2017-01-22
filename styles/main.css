@@ -39,7 +39,6 @@ main {
 .search-form{
   background: #295ea4 url(../images/form-bg.png) top left repeat;
   border-radius: 8px;
-  margin-bottom: 20px;
 }
 
 .search-form .form-group {
