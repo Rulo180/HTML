@@ -21,10 +21,10 @@
           </button>
         </div>
         <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
-          <li><a href="*">inicio</a></li>
+          <li><a href="#"><i class='glyphicon glyphicon-home'></i> inicio</a></li>
           <li class="dropdown">
             <a href="#" class='dropdown-toggle' role="button">
-              viajes<span class="caret"></span>
+              <i class='glyphicon glyphicon-globe'></i> viajes<span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
               <li><a href="#">Link 1</a></li>
@@ -32,15 +32,15 @@
               <li><a href="#">Link 3</a></li>
             </ul>
           </li>
-          <li><a href="*">contacto</a></li>
+          <li><a href="*"><i class='glyphicon glyphicon-envelope'></i> contacto</a></li>
         </ul>
       </div>
     </header>
 
     <div class='container'>
       <div class='row'>
-        <aside class="col-sm-4 search-form">
-          <form class="form-horizontal">
+        <aside class="col-sm-4 search-form" id='search-column'>
+          <form class="form-horizontal" id='search-form'>
             <div class='row'>
               <div class="form-group form-group-lg col-xs-10">
                 <label for="origen">origen</label>
@@ -90,7 +90,7 @@
             </div>
             <div class='row'>
               <div class="form-group col-xs-12">
-                <input type="submit" id="search-submit" value="Buscar" class="btn btn-primary btn-lg center-block">
+                <input type="submit" id="search-submit" value="Buscar" class="btn btn-success btn-lg center-block">
               </div>
             </div>
           </form>
@@ -111,66 +111,110 @@
 
     <div class='container-fluid'>
       <div class='row'>
-      <section class="col-md-10 col-md-offset-1 articles">
-        <article class='col-sm-4'>
+      <section class="col-md-10 col-md-offset-1 offers" id='offers'>
+        <article class='col-sm-6 col-md-4' data-price='20.000'>
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class='panel-title'>paris</h3>
+              <h3 class='panel-title text-center text-uppercase'>paris</h3>
+              <span class='glyphicon glyphicon-remove pull-right'></span>
             </div>
             <div class="panel-body col-md-10 col-md-offset-1">
-              <img src='images/paris.jpg' alt='paris' class="img-responsive img-rounded center-block">
-              <div class="caption well">
-                <h4 class="text-center">semana romantica</h4>
-                <ul class='travel-details'>
+              <figure class='crop center-block'>
+                <img src='images/paris.jpg' alt='paris' class="img-responsive img-rounded">
+              </figure>
+              <figcaption class="caption well">
+                <h4 class="text-center"><strong><u>semana romantica</u></strong></h4>
+                <ul class='offer-details'>
                   <li>5 noches</li>
                   <li>Visitas guiadas</li>
                   <li>Cena romantica en la torre Eiffel.</li>
                 </ul>
-              </div>
+                <div class="btn-group offers-btn" role="group" aria-label="...">
+                  <button class='btn btn-default text-capitalize'>consultar precio</button>
+                  <button class='btn btn-primary text-capitalize'>comprar</button>
+                </div>
+              </figcaption>
             </div>
           </div>
         </article>
-        <article class='col-sm-4'>
+        <article class='col-sm-6 col-md-4' data-price='16.500'>
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class='panel-title'>heerlen</h3>
+              <h3 class='panel-title text-center text-uppercase'>heerlen</h3>
+              <span class='glyphicon glyphicon-remove pull-right'></span>
             </div>
             <div class="panel-body col-md-10 col-md-offset-1">
-              <img src='images/heerlen.jpg' alt='heerlen' class="img-responsive img-rounded center-block">
-              <div class="caption well">
-                <h4 class="text-center">conoce el IBE</h4>
-                <ul class='travel-details'>
+              <figure class='crop center-block'>
+                <img src='images/heerlen.jpg' alt='heerlen' class="img-responsive img-rounded">
+              </figure>
+              <figcaption class="caption well">
+                <h4 class="text-center"><strong><u>conoce el IBE</u></strong></h4>
+                <ul class='offer-details'>
                   <li>3 noches.</li>
                   <li>Pase para toda la temporada.</li>
                   <li>Entrenamiento privado con Juan Ten.</li>
                 </ul>
-              </div>
+                <div class="btn-group offers-btn" role="group" aria-label="...">
+                  <button class='btn btn-default text-capitalize'>consultar precio</button>
+                  <button class='btn btn-primary text-capitalize'>comprar</button>
+                </div>
+              </figcaption>
             </div>
           </div>
         </article>
-        <article class='col-sm-4'>
+        <article class='col-sm-6 col-md-4' data-price='13.000'>
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class='panel-title'>cancun</h3>
+              <h3 class='panel-title text-center text-uppercase'>cancun</h3>
+              <span class='glyphicon glyphicon-remove pull-right'></span>
             </div>
             <div class="panel-body col-md-10 col-md-offset-1">
-              <img src='images/cancun.jpg' alt='cancun' class="img-responsive img-rounded center-block">
-              <div class="caption well">
-                <h4 class="text-center">olvidate de todo</h4>
-                <ul class='travel-details'>
+              <figure class='center-block'>
+                <img src='images/cancun.jpg' alt='cancun' class="img-responsive img-rounded">
+              </figure>
+              <figcaption class="caption well">
+                <h4 class="text-center"><strong><u>olvidate de todo</u></strong></h4>
+                <ul class='offer-details'>
                   <li>10 noches.</li>
                   <li>Tragos en cocos!</li>
                   <li>Flacos trabados y minas operadas.</li>
                 </ul>
-              </div>
+                <div class="btn-group offers-btn" role="group" aria-label="...">
+                  <button class='btn btn-default text-capitalize'>consultar precio</button>
+                  <button class='btn btn-primary text-capitalize'>comprar</button>
+                </div>
+              </figcaption>
             </div>
           </div>
         </article>
+        <div class='row'>
+          <a href='index.html' id='offers-refresh' class='text-center text-capitalize'><i class='glyphicon glyphicon-refresh'></i> recargar ofertas</a>
+        </div>
       </section>
       </div>
-      <div class='row'>
-      <footer class='col-xs-12'>Footer</footer>
-      </div>
+      <footer class='row col-xs-12'>
+        <div class='address text-center'>
+          <address class='col-xs-6 col-sm-4'>
+            <strong>Desplegar S.A.</strong><br>
+            Comodoro Rivadavia, 886<br>
+            Ciudad, Mendoza 5500<br>
+            <abbr title="Phone">T:</abbr> (0261) 4-309833
+          </address>
+        </div>
+        <div class='links text-right'>
+          <ul class='col-xs-6 col-sm-4 text-capitalize'>
+            <li>
+              <a href='aboutus.html'><i class='glyphicon glyphicon-info-sign'></i> acerca de nosotros</a>
+            </li>
+            <li>
+              <a href='faqs.html'><i class='glyphicon glyphicon-question-sign'></i> FAQs</a>
+            </li>
+            <li>
+              <a href='contactus.html'><i class='glyphicon glyphicon-envelope'></i> contacto</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
   </div>
 </body>
 

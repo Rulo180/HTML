@@ -6,7 +6,7 @@ header {
   height: 319px;
   background: #7a3a0d;
   background: url(../images/panorama.jpg) top center no-repeat;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .nav-bar {
@@ -14,9 +14,9 @@ header {
 }
 
 .nav-bar li {
-  min-width: 80px;
+  width: 107px;
 }
-
+//Restarle 2px al width de las li si borras el borde de 1px
 .nav-bar li:hover {
   border: 1px solid grey;
 }
@@ -34,11 +34,13 @@ main {
   display: inline-block;
   background-color: #AFE0FF;
   border-radius: 8px;
+  margin: 10px 0;
 }
 
 .search-form{
   background: #295ea4 url(../images/form-bg.png) top left repeat;
   border-radius: 8px;
+  margin: 10px 0;
 }
 
 .search-form .form-group {
@@ -46,32 +48,44 @@ main {
 }
 
 .articles {
-  margin-bottom: 20px;
+  margin: 10px 5px;
 }
 
-.articles article h3 {
-  font-size: 18px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.articles h4 {
+.offers h4 {
   text-transform: capitalize;
   font-size: 16px;
 }
 
-.articles img {
-  max-height: 180px;
+.offers .panel-heading h3 {
+  display: inline-block;
+  font-size: 18px;
 }
 
-.articles .travel-details {
-
-}
-
-.articles .well {
+.offers .well {
   margin: 10px;
+}
+
+#offers-refresh {
+  font-size: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
   background: black url(../images/footer_lodyas.png) top left repeat;
+  color: white;
+  margin-top:10px;
+  padding: 20px;
+}
+
+footer .address {
+}
+
+footer .links ul {
+  list-style: none;
+}
+
+footer .links a {
+  color:#4eb7d9;
 }
